@@ -339,4 +339,24 @@ header {
     #about-this-site p {
         max-width: 300px;
     }
+
+    .profile {
+        flex-direction: column;
+    }
+
+    #about-me img {
+        height: 300px;
+        padding-right: 0;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .profile-detail p {
+        margin-bottom: 20px;
+    }
+
+    .profile-detail a {
+        position: unset;
+        padding-bottom: 10px;
+    }
 }
