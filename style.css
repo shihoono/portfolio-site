@@ -61,6 +61,29 @@ header {
     display: none;
 }
 
+/* トップ */
+
+#top {
+    height: calc(100vh - 60px);
+    padding-top: 70px;
+    text-align: center;
+    color: #ffffff;
+}
+
+#top h1 {
+    font-size: 3.5rem;
+}
+
+#top p {
+    font-size: 2.6rem;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+#top img {
+    max-width: 400px;
+}
+
 /* タブレット */
 
 @media screen and (max-width: 1024px) {
