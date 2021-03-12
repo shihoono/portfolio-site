@@ -167,7 +167,7 @@ header {
 .common h2 {
     font-size: 3.0rem;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 /* about this site セクション */
@@ -184,6 +184,50 @@ header {
     max-width: 600px;
     margin: 0 auto;
     line-height: 1.7;
+}
+
+/* about me セクション */
+
+#about-me {
+    padding-bottom: 70px;
+}
+
+#about-me h2 {
+    color: #ffffff;
+}
+
+#about-me img {
+    max-width: 300px;
+    padding-right: 30px;
+}
+
+#about-me p {
+    color: #ffffff;
+    font-size: 1.6rem;
+    max-width: 350px;
+    padding-left: 30px;
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+}
+
+.profile-detail {
+    position: relative;
+}
+
+.profile-detail a {
+    display: block;
+    color: #ffffff;
+    font-size: 1.6rem;
+    padding-left: 30px;
+    position: absolute;
+    bottom: 30px;
+}
+
+.profile-detail a:nth-of-type(2) {
+    bottom: 0;
 }
 
 /* タブレット */
