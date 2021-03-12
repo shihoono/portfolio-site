@@ -191,6 +191,7 @@ header {
     max-width: 600px;
     margin: 0 auto;
     line-height: 1.7;
+    font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
 }
 
 /* about me セクション */
@@ -213,6 +214,7 @@ header {
     font-size: 1.6rem;
     max-width: 350px;
     padding-left: 30px;
+    font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
 }
 
 .profile {
