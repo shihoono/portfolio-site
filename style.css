@@ -84,6 +84,33 @@ header {
     max-width: 400px;
 }
 
+/* セクション共通 */
+
+.common {
+    padding-top: 70px;
+}
+
+.common h2 {
+    font-size: 3.0rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* about this site セクション */
+
+#about-this-site {
+    height: 400px;
+    background-color: #abd1c6;
+}
+
+#about-this-site p {
+    text-align: center;
+    font-size: 1.6rem;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
 /* タブレット */
 
 @media screen and (max-width: 1024px) {
