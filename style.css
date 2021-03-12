@@ -99,8 +99,9 @@ header {
 /* about this site セクション */
 
 #about-this-site {
-    height: 400px;
+    min-height: 400px;
     background-color: #abd1c6;
+    padding-bottom: 70px;
 }
 
 #about-this-site p {
@@ -192,4 +193,17 @@ header {
         left: 0;
     }
 
+}
+
+/* スマートフォン */
+
+@media screen and (max-width: 767px) {
+
+    #top img {
+        width: 100%;
+    }
+
+    #about-this-site p {
+        max-width: 300px;
+    }
 }
