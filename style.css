@@ -267,6 +267,13 @@ header {
         left: 0;
     }
 
+    #top {
+        height: 70vh;
+    }
+
+    #top a {
+        bottom: 300px;
+    }
 }
 
 /* スマートフォン */
@@ -275,6 +282,14 @@ header {
 
     #top img {
         width: 100%;
+    }
+
+    #top {
+        height: calc(100vh - 60px);
+    }
+
+    #top a {
+        bottom: 20px;
     }
 
     #about-this-site p {
