@@ -239,6 +239,33 @@ header {
     bottom: 0;
 }
 
+/* works セクション */
+
+#works {
+    background-color: #abd1c6;
+    padding-bottom: 70px;
+}
+
+.portfolios {
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio img {
+    max-width: 400px;
+}
+
+.portfolio {
+    padding: 0 20px;
+}
+
+.portfolio p {
+    text-align: center;
+    font-size: 1.6rem;
+    margin-top: 10px;
+    font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+}
+
 /* タブレット */
 
 @media screen and (max-width: 1024px) {
