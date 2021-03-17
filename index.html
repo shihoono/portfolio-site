@@ -70,6 +70,9 @@
                     </li>
                 </ul>
                 <modal v-if="showModal == '1'" @close="showModal = false" :key="1">
+                    <div class="close-button" slot="close-button">
+                        <img src="img/Hands - Denied.png">
+                    </div>
                     <div class="description" slot="description">
                         <div class="about-portfolio">
                             <div class="about-main">
@@ -114,6 +117,9 @@
                     </div>
                 </modal>
                 <modal v-else-if="showModal == '2'" @close="showModal = false" :key="2">
+                    <div class="close-button" slot="close-button">
+                        <img src="img/Hands - Denied.png">
+                    </div>
                     <div class="description" slot="description">
                         <div class="about-portfolio">
                             <div class="about-main">
@@ -161,8 +167,11 @@
         <script type="text/x-template" id="modal-template">
             <transition name="modal">
                 <div class="modal-mask">
-                    <div class="modal-wrapper" @click="$emit('close')">
+                    <div class="modal-wrapper">
                         <div class="modal-container">
+                            <div class="close" @click="$emit('close')">
+                                <slot name="close-button"></slot>
+                            </div>
                             <slot name="description"></slot>
                             <slot name="detail"></slot>
                         </div>
@@ -172,7 +181,6 @@
         </script>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="modal.js"></script>
 </body>
 </html>
