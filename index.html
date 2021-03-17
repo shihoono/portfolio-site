@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -56,18 +57,122 @@
             </div>
         </section>
         <section id="works" class="common">
-            <h2>Works</h2>
-            <div class="portfolios">
-                <div class="portfolio no1">
-                    <img src="img/portfolio1.png" alt="portfolio1">
-                    <p>ミニオークションサイト</p>
-                </div>
-                <div class="portfolio no2">
-                    <img src="img/portfolio2.png" alt="portfolio2">
-                    <p>ポートフォリオサイト</p>
-                </div>
+            <div id="modal">
+                <h2>Works</h2>
+                <ul class="portfolios modalArea">
+                    <li class="portfolio" @click="showModal = 1">
+                        <img src="img/portfolio1.png" alt="portfolio1">
+                        <p>ミニオークションサイト</p>
+                    </li>
+                    <li class="portfolio" @click="showModal = 2">
+                        <img src="img/portfolio2.png" alt="portfolio2">
+                        <p>ポートフォリオサイト</p>
+                    </li>
+                </ul>
+                <modal v-if="showModal == '1'" @close="showModal = false" :key="1">
+                    <div class="description" slot="description">
+                        <div class="about-portfolio">
+                            <div class="about-main">
+                                <h4>ミニオークションサイト</h4>
+                                <p>
+                                    CakePHP3の学習でお世話になった"CakePHP超入門（掌田津耶乃著）"のオークションサイトのチュートリアルをLaravelで実装しました。チュートリアルにはなかった、発送・受取連絡機能、取引相手評価機能、画像アップロード機能も実装しました。自分でDockerを使ったLEMP環境を構築し、AWSを活用しデプロイしました。
+                                </p>
+                                <a href="#"><i class="fas fa-desktop"></i></i> Demo</a>
+                                <a href="#"><i class="fab fa-github"></i> GitHub</a>
+                            </div>
+                            <div class="about-sub">
+                                <h4>使用した技術</h4>
+                                <ul>
+                                    <li>Laravel6.0</li>
+                                    <li>PHP7.4</li>
+                                    <li>HTML5/CSS3</li>
+                                    <li>Bootstrap4.2</li>
+                                    <li>MySQL8.0</li>
+                                    <li>Docker(Webサーバはnginx: 1.18-alpineを使用)</li>
+                                    <li>AWS(EC2)</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="portfolio-images">
+                            <ul>
+                                <!-- 後で画像差し替え -->
+                                <li><img src="img/Auction/Auction-login.png" alt="portfolio-page"></li>
+                                <li><img src="img/Auction/Auction-signup.png" alt="portfolio-page"></li>
+                                <li><img src="img/Auction/Auction-top.png" alt="portfolio-page"></li>
+                                <li><img src="img/Auction/Auction-item.png" alt="portfolio-page"></li>
+                                <li><img src="img/Auction/Auction-add.png" alt="portfolio-page"></li>
+                                <li><img src="img/Auction/Auction-transaction.png" alt="portfolio-page"></li>
+                                <li><img src="img/Auction/Auction-transaction2.png" alt="portfolio-page"></li>
+                                <li><img src="img/Auction/Auction-review.png" alt="portfolio-page"></li>
+                            </ul>
+                            <div id="image-area">
+                                <img src="img/Auction/Auction-login.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail" slot="detail">
+                    </div>
+                </modal>
+                <modal v-else-if="showModal == '2'" @close="showModal = false" :key="2">
+                    <div class="description" slot="description">
+                        <div class="about-portfolio">
+                            <div class="about-main">
+                                <h4>ポートフォリオサイト</h4>
+                                <p>
+                                    現在ご覧いただいているWebページです。デザインから考え、自分のイメージを表現しました。モーダルウィンドウは学びたてのVue.jsを活用して実装しました。まだご紹介するポートフォリオが少なく少し寂しい感じはありますが、徐々に増やしていけるよう精進いたします。
+                                </p>
+                                <a href="#"><i class="fas fa-desktop"></i></i> Demo</a>
+                                <a href="#"><i class="fab fa-github"></i> GitHub</a>
+                            </div>
+                            <div class="about-sub">
+                                <h4>使用した技術</h4>
+                                <ul>
+                                    <li>HTML5/CSS3</li>
+                                    <li>JavaScript</li>
+                                    <li>Vue.js2.6</li>
+                                    <li>Formspree（お問合せフォーム）</li>
+                                    <li>AdobeXD(デザインカンプ）</li>
+                                    <li>AWS(EC2)</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="portfolio-images">
+                            <ul>
+                                <!-- 後で画像差し替え -->
+                                <li><img src="img/Auction/Auction-login.png" alt="portfolio-page"></li>
+                                <li><img src="img/Auction/Auction-signup.png" alt="portfolio-page"></li>
+                                <li><img src="img/Auction/Auction-top.png" alt="portfolio-page"></li>
+                                <li><img src="img/Auction/Auction-item.png" alt="portfolio-page"></li>
+                                <li><img src="img/Auction/Auction-add.png" alt="portfolio-page"></li>
+                                <li><img src="img/Auction/Auction-transaction.png" alt="portfolio-page"></li>
+                                <li><img src="img/Auction/Auction-transaction2.png" alt="portfolio-page"></li>
+                                <li><img src="img/Auction/Auction-review.png" alt="portfolio-page"></li>
+                            </ul>
+                            <div id="image-area">
+                                <img src="img/Auction/Auction-login.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail" slot="detail">
+                    </div>
+                </modal>
             </div>
         </section>
+        <script type="text/x-template" id="modal-template">
+            <transition name="modal">
+                <div class="modal-mask">
+                    <div class="modal-wrapper" @click="$emit('close')">
+                        <div class="modal-container">
+                            <slot name="description"></slot>
+                            <slot name="detail"></slot>
+                        </div>
+                    </div>
+                </div>
+            </transition>
+        </script>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="modal.js"></script>
 </body>
 </html>
