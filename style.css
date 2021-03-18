@@ -17,6 +17,10 @@ ul {
     list-style: none;
 }
 
+button:focus {
+    outline: none;
+}
+
 /* ヘッダー */
 
 header {
