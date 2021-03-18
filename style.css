@@ -295,14 +295,6 @@ header {
     transition: all .3s ease;
 }
 
-/* .modal-header h3 {
-    margin-top: 0;
-    color: #001e1d;
-    font-size: 30px;
-    text-align: center;
-    font-weight: bold;
-} */
-
 .modal-enter {
     opacity: 0;
 }
@@ -477,6 +469,23 @@ opacity: 0;
     #top a {
         bottom: 350px;
     }
+
+    .portfolios {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .portfolio p {
+        padding-bottom: 25px;
+    }
+
+    .modal-container {
+        width: 90%;
+    }
+
+    .about-sub {
+        padding-top: 15px;
+    }
 }
 
 /* スマートフォン */
@@ -517,5 +526,17 @@ opacity: 0;
     .profile-detail a {
         position: unset;
         padding-bottom: 10px;
+    }
+
+    .description {
+        flex-direction: column;
+    }
+
+    .about-portfolio {
+        width: 100%;
+    }
+
+    .portfolio-images ul {
+        display: none;
     }
 }
