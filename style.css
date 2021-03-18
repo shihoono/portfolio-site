@@ -420,7 +420,8 @@ opacity: 0;
 
 .skill {
     display: flex;
-    padding: 20px 40px 20px 50px;
+    padding: 20px 40px 20px 40px;
+    height: 100%;
 }
 
 .icon {
@@ -553,6 +554,11 @@ opacity: 0;
     .about-sub {
         padding-top: 15px;
     }
+
+    .skill-text p {
+        font-size: 1.1rem;
+    }
+
 }
 
 /* スマートフォン */
@@ -613,5 +619,49 @@ opacity: 0;
 
     #image-area img {
         display: none;
+    }
+
+    .skill {
+        flex-direction: column;
+        padding: 10px 25px 25px 10px;
+        position: relative;
+    }
+
+    .hooper-slide {
+        border-right: none;
+        border-left: none;
+    }
+
+    .hooper-next {
+        right: 0;
+    }
+
+    .hooper-prev {
+        left: 0;
+    }
+
+    .skills-common img {
+        width: 40px;
+    }
+
+    .skill-text h4 {
+        font-size: 1.5rem;
+        position: absolute;
+        top: 20px;
+        right: 35px;
+    }
+
+    .skill-text p {
+        font-size: 1.0rem;
+        padding-top: 10px;
+    }
+
+    .html-css img {
+        width: 30px;
+    }
+
+    .html-css h4 {
+        font-size: 1.3rem;
+        right: 10px;
     }
 }
