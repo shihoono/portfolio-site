@@ -653,7 +653,6 @@ opacity: 0;
 
     .skill-text p {
         font-size: 1.0rem;
-        padding-top: 10px;
     }
 
     .html-css img {
@@ -663,5 +662,9 @@ opacity: 0;
     .html-css h4 {
         font-size: 1.3rem;
         right: 10px;
+    }
+
+    .html-css p {
+        padding-top: 10px;
     }
 }
