@@ -388,8 +388,26 @@ opacity: 0;
 
 /* Skills セクション */
 
+#skills {
+    padding-bottom: 70px;
+}
+
 #skills h2 {
     color: #fffffe;
+}
+
+.hooper-slide {
+    background-color: #e8e4e6;
+    border-right: 25px solid #004643;
+    border-left: 25px solid #004643;
+}
+
+.hooper-next {
+    right: 20px;
+}
+
+.hooper-prev {
+    left: 20px;
 }
 
 /* タブレット */

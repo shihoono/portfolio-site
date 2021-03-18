@@ -7,6 +7,7 @@
     <meta name="description" content="">
     <link rel="icon" href="img/Hands - Flower.png">
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hooper@0.2.1/dist/hooper.css">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500&display=swap" rel="stylesheet">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
@@ -176,6 +177,26 @@
         </section>
         <section id="skills" class="common">
             <h2>Skills</h2>
+            <slider-main>
+                <div id="slider">
+                    <hooper :infinite-scroll="true" :items-to-show="2">
+                        <slide>
+                            slide 1
+                        </slide>
+                        <slide>
+                            slide 2
+                        </slide>
+                        <slide>
+                            slide 3
+                        </slide>
+                        <slide>
+                            slide 4
+                        </slide>
+                        <hooper-navigation slot="hooper-addons"></hooper-navigation>
+                        <hooper-pagination slot="hooper-addons"></hooper-pagination>
+                    </hooper>
+                </div>
+            </slider-main>
         </section>
         <script type="text/x-template" id="modal-template">
             <transition name="modal">
@@ -192,8 +213,14 @@
                 </div>
             </transition>
         </script>
+        <script type="text/x-template" id="slider-template">
+            <transition name="slider">
+                <slot name="slider-main"></slot>
+            </transition>
+        </script>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/hooper@0.2.1/dist/hooper.min.js"></script>
     <script src="modal.js"></script>
 </body>
 </html>

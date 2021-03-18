@@ -33,5 +33,19 @@ new Vue({
         push_h: function (event) {
             this.type = 'H'
         },
-    }
+    },
+})
+
+Vue.component('slider', {
+    template: '#slider-template'
+})
+
+new Vue ({
+    el: "#slider",
+    components: {
+        Hooper: window.Hooper.Hooper,
+        Slide: window.Hooper.Slide,
+        HooperNavigation: window.Hooper.Navigation,
+        HooperPagination: window.Hooper.Pagination,
+    },
 })
