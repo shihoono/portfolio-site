@@ -99,17 +99,40 @@
                         <div class="portfolio-images">
                             <ul>
                                 <!-- 後で画像差し替え -->
-                                <li><img src="img/Auction/Auction-login.png" alt="portfolio-page"></li>
-                                <li><img src="img/Auction/Auction-signup.png" alt="portfolio-page"></li>
-                                <li><img src="img/Auction/Auction-top.png" alt="portfolio-page"></li>
-                                <li><img src="img/Auction/Auction-item.png" alt="portfolio-page"></li>
-                                <li><img src="img/Auction/Auction-add.png" alt="portfolio-page"></li>
-                                <li><img src="img/Auction/Auction-transaction.png" alt="portfolio-page"></li>
-                                <li><img src="img/Auction/Auction-transaction2.png" alt="portfolio-page"></li>
-                                <li><img src="img/Auction/Auction-review.png" alt="portfolio-page"></li>
+                                <li @click="push_a"><img src="img/Auction/Auction-login.png" alt="portfolio-page"></li>
+                                <li @click="push_b"><img src="img/Auction/Auction-signup.png" alt="portfolio-page"></li>
+                                <li @click="push_c"><img src="img/Auction/Auction-top.png" alt="portfolio-page"></li>
+                                <li @click="push_d"><img src="img/Auction/Auction-item.png" alt="portfolio-page"></li>
+                                <li @click="push_e"><img src="img/Auction/Auction-add.png" alt="portfolio-page"></li>
+                                <li @click="push_f"><img src="img/Auction/Auction-transaction.png" alt="portfolio-page"></li>
+                                <li @click="push_g"><img src="img/Auction/Auction-transaction2.png" alt="portfolio-page"></li>
+                                <li @click="push_h"><img src="img/Auction/Auction-review.png" alt="portfolio-page"></li>
                             </ul>
                             <div id="image-area">
-                                <img src="img/Auction/Auction-login.png">
+                                <div v-if="type === 'A'">
+                                    <img src="img/Auction/Auction-login.png">
+                                </div>
+                                <div v-else-if="type === 'B'">
+                                    <img src="img/Auction/Auction-signup.png">
+                                </div>
+                                <div v-else-if="type === 'C'">
+                                    <img src="img/Auction/Auction-top.png">
+                                </div>
+                                <div v-else-if="type === 'D'">
+                                    <img src="img/Auction/Auction-item.png">
+                                </div>
+                                <div v-else-if="type === 'E'">
+                                    <img src="img/Auction/Auction-add.png">
+                                </div>
+                                <div v-else-if="type === 'F'">
+                                    <img src="img/Auction/Auction-transaction.png">
+                                </div>
+                                <div v-else-if="type === 'G'">
+                                    <img src="img/Auction/Auction-transaction2.png">
+                                </div>
+                                <div v-else-if="type === 'H'">
+                                    <img src="img/Auction/Auction-review.png">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -145,17 +168,28 @@
                         <div class="portfolio-images">
                             <ul>
                                 <!-- 後で画像差し替え -->
-                                <li><img src="img/Auction/Auction-login.png" alt="portfolio-page"></li>
-                                <li><img src="img/Auction/Auction-signup.png" alt="portfolio-page"></li>
-                                <li><img src="img/Auction/Auction-top.png" alt="portfolio-page"></li>
-                                <li><img src="img/Auction/Auction-item.png" alt="portfolio-page"></li>
-                                <li><img src="img/Auction/Auction-add.png" alt="portfolio-page"></li>
-                                <li><img src="img/Auction/Auction-transaction.png" alt="portfolio-page"></li>
-                                <li><img src="img/Auction/Auction-transaction2.png" alt="portfolio-page"></li>
-                                <li><img src="img/Auction/Auction-review.png" alt="portfolio-page"></li>
+                                <li @click="push_a"><img src="img/Auction/Auction-login.png" alt="portfolio-page"></li>
+                                <li @click="push_b"><img src="img/Auction/Auction-signup.png" alt="portfolio-page"></li>
+                                <li @click="push_c"><img src="img/Auction/Auction-top.png" alt="portfolio-page"></li>
+                                <li @click="push_d"><img src="img/Auction/Auction-item.png" alt="portfolio-page"></li>
+                                <li @click="push_e"><img src="img/Auction/Auction-add.png" alt="portfolio-page"></li>
                             </ul>
                             <div id="image-area">
-                                <img src="img/Auction/Auction-login.png">
+                                <div v-if="type === 'A'">
+                                    <img src="img/Auction/Auction-login.png">
+                                </div>
+                                <div v-else-if="type === 'B'">
+                                    <img src="img/Auction/Auction-signup.png">
+                                </div>
+                                <div v-else-if="type === 'C'">
+                                    <img src="img/Auction/Auction-top.png">
+                                </div>
+                                <div v-else-if="type === 'D'">
+                                    <img src="img/Auction/Auction-item.png">
+                                </div>
+                                <div v-else-if="type === 'E'">
+                                    <img src="img/Auction/Auction-add.png">
+                                </div>
                             </div>
                         </div>
                     </div>
