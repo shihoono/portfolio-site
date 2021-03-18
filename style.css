@@ -452,6 +452,7 @@ opacity: 0;
 #contact {
     background-color: #abd1c6;
     padding-bottom: 70px;
+    position:relative;
 }
 
 #contact form {
@@ -491,6 +492,14 @@ opacity: 0;
     font-size: 1.8rem;
     font-weight: bold;
     border-radius: 3px;
+}
+
+#contact img {
+    width: 230px;
+    position: absolute;
+    top: 30%;
+    left: 72%;
+    transform: translate(-50%, 0);
 }
 
 /* タブレット */
