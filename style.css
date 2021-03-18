@@ -410,6 +410,40 @@ opacity: 0;
     left: 20px;
 }
 
+.html-css img {
+    width: 40px;
+}
+
+.skill {
+    display: flex;
+    padding: 20px 40px 20px 50px;
+}
+
+.icon {
+    display: flex;
+    flex-direction: row;
+}
+
+.skill-text {
+    padding-left: 20px;
+}
+
+.skill-text h4 {
+    color: #001e1d;
+    font-size: 1.8rem;
+    padding-bottom: 10px;
+}
+
+.skill-text p {
+    color: #0f3433;
+    font-size: 1.3rem;
+    line-height: 1.7;
+}
+
+.skills-common img {
+    width: 60px;
+}
+
 /* タブレット */
 
 @media screen and (max-width: 1024px) {
