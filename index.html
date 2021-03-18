@@ -109,30 +109,14 @@
                                 <li @click="push_h"><img src="img/Auction/Auction-review.png" alt="portfolio-page"></li>
                             </ul>
                             <div id="image-area">
-                                <div v-if="type === 'A'">
-                                    <img src="img/Auction/Auction-login.png">
-                                </div>
-                                <div v-else-if="type === 'B'">
-                                    <img src="img/Auction/Auction-signup.png">
-                                </div>
-                                <div v-else-if="type === 'C'">
-                                    <img src="img/Auction/Auction-top.png">
-                                </div>
-                                <div v-else-if="type === 'D'">
-                                    <img src="img/Auction/Auction-item.png">
-                                </div>
-                                <div v-else-if="type === 'E'">
-                                    <img src="img/Auction/Auction-add.png">
-                                </div>
-                                <div v-else-if="type === 'F'">
-                                    <img src="img/Auction/Auction-transaction.png">
-                                </div>
-                                <div v-else-if="type === 'G'">
-                                    <img src="img/Auction/Auction-transaction2.png">
-                                </div>
-                                <div v-else-if="type === 'H'">
-                                    <img src="img/Auction/Auction-review.png">
-                                </div>
+                                <img v-if="type === 'A'"　src="img/Auction/Auction-login.png">
+                                <img v-else-if="type === 'B'" src="img/Auction/Auction-signup.png">
+                                <img v-else-if="type === 'C'" src="img/Auction/Auction-top.png">
+                                <img v-else-if="type === 'D'" src="img/Auction/Auction-item.png">
+                                <img v-else-if="type === 'E'" src="img/Auction/Auction-add.png">
+                                <img v-else-if="type === 'F'" src="img/Auction/Auction-transaction.png">
+                                <img v-else-if="type === 'G'" src="img/Auction/Auction-transaction2.png">
+                                <img v-else-if="type === 'H'" src="img/Auction/Auction-review.png">
                             </div>
                         </div>
                     </div>
@@ -175,20 +159,12 @@
                                 <li @click="push_e"><img src="img/Auction/Auction-add.png" alt="portfolio-page"></li>
                             </ul>
                             <div id="image-area">
-                                <div v-if="type === 'A'">
-                                    <img src="img/Auction/Auction-login.png">
-                                </div>
-                                <div v-else-if="type === 'B'">
-                                    <img src="img/Auction/Auction-signup.png">
-                                </div>
-                                <div v-else-if="type === 'C'">
-                                    <img src="img/Auction/Auction-top.png">
-                                </div>
-                                <div v-else-if="type === 'D'">
-                                    <img src="img/Auction/Auction-item.png">
-                                </div>
-                                <div v-else-if="type === 'E'">
-                                    <img src="img/Auction/Auction-add.png">
+                                <div id="image-area">
+                                    <img v-if="type === 'A'"　src="img/Auction/Auction-login.png">
+                                    <img v-else-if="type === 'B'" src="img/Auction/Auction-signup.png">
+                                    <img v-else-if="type === 'C'" src="img/Auction/Auction-top.png">
+                                    <img v-else-if="type === 'D'" src="img/Auction/Auction-item.png">
+                                    <img v-else-if="type === 'E'" src="img/Auction/Auction-add.png">
                                 </div>
                             </div>
                         </div>
