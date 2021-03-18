@@ -381,6 +381,12 @@ opacity: 0;
     padding-top: 20px;
 }
 
+/* Skills セクション */
+
+#skills h2 {
+    color: #ffffff;
+}
+
 /* タブレット */
 
 @media screen and (max-width: 1024px) {
