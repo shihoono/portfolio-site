@@ -260,6 +260,10 @@ header {
     max-width: 400px;
 }
 
+.portfolio img:hover {
+    cursor: pointer;
+}
+
 .portfolio {
     padding: 0 20px;
 }
@@ -375,6 +379,10 @@ opacity: 0;
     width: 100px;
 }
 
+.portfolio-images img:hover {
+    cursor: pointer;
+}
+
 .portfolio-images ul {
     display: flex;
     flex-wrap: wrap;
@@ -471,6 +479,10 @@ opacity: 0;
     margin-bottom: 20px;
 }
 
+#contact input:focus {
+    outline: none;
+}
+
 #contact input::placeholder{
     color: #0f3433;
 }
@@ -481,6 +493,10 @@ opacity: 0;
     height:80px;
     margin-bottom: 20px;
     border-bottom: 1px solid #0f3433;
+}
+
+#contact textarea:focus {
+    outline: none;
 }
 
 #contact textarea::placeholder{
