@@ -449,6 +449,8 @@ opacity: 0;
     width: 60px;
 }
 
+/* Contact セクション */
+
 #contact {
     background-color: #abd1c6;
     padding-bottom: 70px;
@@ -612,6 +614,12 @@ opacity: 0;
         font-size: 1.1rem;
     }
 
+    #contact img {
+        width: 140px;
+        top: 50%;
+        left: 13%;
+    }
+
 }
 
 /* スマートフォン */
@@ -719,5 +727,19 @@ opacity: 0;
 
     .html-css p {
         padding-top: 10px;
+    }
+
+    #contact form {
+        width: 250px;
+    }
+
+    #contact textarea {
+        width: 250px;
+    }
+
+    #contact img {
+        width: 80px;
+        top: 5%;
+        left: 80%;
     }
 }
