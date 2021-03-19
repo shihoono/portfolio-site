@@ -504,6 +504,20 @@ opacity: 0;
     transform: translate(-50%, 0);
 }
 
+/* footer */
+
+footer {
+    height: 60px;
+}
+
+small {
+    color: #fffffe;
+    font-size: 1.6rem;
+    line-height: 60px;
+    vertical-align: middle;
+    padding-left: 40px;
+}
+
 /* タブレット */
 
 @media screen and (max-width: 1024px) {
