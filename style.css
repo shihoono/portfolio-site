@@ -336,6 +336,10 @@ opacity: 0;
     width: 40px;
 }
 
+.close-button img:hover {
+    cursor: pointer;
+}
+
 .about-portfolio {
     width: 35%;
 }
