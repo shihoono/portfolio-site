@@ -601,6 +601,10 @@ small {
         transition: all 0.5s;
     }
 
+    .menu-content a {
+        border-bottom: solid;
+    }
+
     .menu-content ul {
         flex-direction: column;
     }
