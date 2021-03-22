@@ -639,8 +639,12 @@ small {
         padding-top: 15px;
     }
 
+    .html-css p {
+        font-size: 1.0rem;
+    }
+
     .skill-text p {
-        font-size: 1.1rem;
+        font-size: 1.0rem;
     }
 
     #contact img {
@@ -756,6 +760,11 @@ small {
 
     .html-css p {
         padding-top: 10px;
+        line-height: normal;
+    }
+
+    .skill-text p {
+        line-height: normal;
     }
 
     #contact form {
