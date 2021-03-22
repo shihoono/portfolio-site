@@ -460,6 +460,10 @@ opacity: 0;
     width: 60px;
 }
 
+.skill:hover {
+    cursor: pointer;
+}
+
 /* Contact セクション */
 
 #contact {
