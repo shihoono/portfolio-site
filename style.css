@@ -222,13 +222,13 @@ header {
     font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
 }
 
+.profile-detail p:nth-of-type(2) {
+    margin-bottom: 20px;
+}
+
 .profile {
     display: flex;
     justify-content: center;
-}
-
-.profile-detail {
-    position: relative;
 }
 
 .profile-detail a {
@@ -236,8 +236,7 @@ header {
     color: #fffffe;
     font-size: 1.6rem;
     padding-left: 30px;
-    position: absolute;
-    bottom: 30px;
+    padding-bottom: 10px;
 }
 
 .profile-detail a:nth-of-type(2) {
@@ -695,10 +694,6 @@ small {
         height: 300px;
         padding-right: 0;
         margin: 0 auto;
-        margin-bottom: 20px;
-    }
-
-    .profile-detail p {
         margin-bottom: 20px;
     }
 
