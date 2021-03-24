@@ -212,7 +212,7 @@ header {
 
 #about-me img {
     max-width: 350px;
-    margin-right: 30px;
+    padding-right: 30px;
 }
 
 #about-me p {
@@ -258,6 +258,13 @@ header {
 
 .portfolio img {
     max-width: 400px;
+    transition-duration: 0.5s;
+}
+
+.portfolio img:hover{
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+    transform: translateY(-10px);
+    transition-duration: 0.5s;
 }
 
 .portfolio img:hover {
