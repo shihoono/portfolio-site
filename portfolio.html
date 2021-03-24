@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Shiho's Portfolio</title>
+    <meta name="description" content="Shihoのポートフォリオサイトです。こちらでは、これまでに手掛けたポートフォリオやスキル等をまとめております。">
+    <link rel="icon" href="img/Hands - Flower.png">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hooper@0.2.1/dist/hooper.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-fixed">
+            <div class="logo">
+                <img src="img/Hands - Flower.png" alt="logo">
+                <p>Shiho's portfolio</p>
+            </div>
+            <div class="hamburger-menu">
+                <input type="checkbox" id="menu-btn-check">
+                <label for="menu-btn-check" class="menu-btn"><span></span></label>
+                <div class="menu-content">
+                    <ul>
+                        <li><a href="#top">TOP</a></li>
+                        <li><a href="#about-this-site">About this site</a></li>
+                        <li><a href="#about-me">About me</a></li>
+                        <li><a href="#works">Portfolio</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="top">
+            <h1>Hello!</h1>
+            <p>Welcome to Shiho's Portfolio.</p>
+            <img src="img/Humaaans - 1 Character.png" alt="top_image">
+            <a href="#about-this-site"><span></span>Scroll</a>
+        </div>
+        <section id="about-this-site" class="common">
+            <h2>About this site</h2>
+            <!-- 240文字 -->
+            <p>ポートフォリオサイトをご覧いただき、ありがとうございます。こちらでは、これまでに手掛けたポートフォリオやスキル等をまとめております。現在開発中なものなど、随時こちらのポートフォリオサイトに作品を追加していく予定です。デザインは完全に素人ではございますが、できるだけ私のイメージを表現しました。</p>
+        </section>
+        <section id="about-me" class="common">
+            <h2>About me</h2>
+            <div class="profile">
+                <img src="img/profile.jpeg" alt="profile">
+                <div class="profile-detail">
+                    <p>商社、Webマーケティング企業を経て、エンジニアを目指し学習中です。エンジニアを目指したきっかけは、Webマーケティング企業にてディレクションに挑戦したとき、私も開発してみたい！と思い、好きなWebサイトを見様見真似で作ってみたらハマったこと、また、ITの力で社会問題を解決したいと思ったからです。</p>
+                    <p>コロナ禍で生まれた私の最近の趣味は、料理です。といっても、スパイスから作るカレーでしたり、手作りコーラやジンジャエールなど制作物より(?)の料理が好きで、何かを生み出すということそのものが私は好きみたいです。</p>
+                    <a href="https://www.notion.so/Home-7958bae7b6ed46b09977aa0e5723ef8f">Article : https://www.notion.so/Home</a>
+                    <a href="https://github.com/shihoono">GitHub : https://github.com/</a>
+                </div>
+            </div>
+        </section>
+        <section id="works" class="common">
+            <div id="modal">
+                <h2>Works</h2>
+                <ul class="portfolios modalArea">
+                    <li class="portfolio" @click="showModal = 1">
+                        <img src="img/portfolio1.png" alt="portfolio1">
+                        <p>ミニオークションサイト</p>
+                    </li>
+                    <li class="portfolio" @click="showModal = 2">
+                        <img src="img/portfolio2.png" alt="portfolio2">
+                        <p>ポートフォリオサイト</p>
+                    </li>
+                </ul>
+                <modal v-if="showModal == '1'" @close="showModal = false" :key="1">
+                    <div class="close-button" slot="close-button">
+                        <img src="img/Hands - Denied.png">
+                    </div>
+                    <div class="description" slot="description">
+                        <div class="about-portfolio">
+                            <div class="about-main">
+                                <h4>ミニオークションサイト</h4>
+                                <p>
+                                    CakePHP3の学習でお世話になった"CakePHP超入門（掌田津耶乃著）"のオークションサイトのチュートリアルをLaravelで実装しました。チュートリアルにはなかった、発送・受取連絡機能、取引相手評価機能、画像アップロード機能も実装しました。自分でDockerを使ったLEMP環境を構築し、AWSを活用しデプロイしました。
+                                </p>
+                                <a href="#"><i class="fas fa-desktop"></i></i> Demo</a>
+                                <a href="#"><i class="fab fa-github"></i> GitHub</a>
+                            </div>
+                            <div class="about-sub">
+                                <h4>使用した技術</h4>
+                                <ul>
+                                    <li>Laravel6.0</li>
+                                    <li>PHP7.4</li>
+                                    <li>HTML5/CSS3</li>
+                                    <li>Bootstrap4.2</li>
+                                    <li>MySQL8.0</li>
+                                    <li>Docker(Webサーバはnginx: 1.18-alpineを使用)</li>
+                                    <li>AWS(EC2)</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="portfolio-images">
+                            <ul>
+                                <!-- 後で画像差し替え -->
+                                <li @click="push_a"><img src="img/Auction/Auction-login.png" alt="portfolio-page"></li>
+                                <li @click="push_b"><img src="img/Auction/Auction-signup.png" alt="portfolio-page"></li>
+                                <li @click="push_c"><img src="img/Auction/Auction-top.png" alt="portfolio-page"></li>
+                                <li @click="push_d"><img src="img/Auction/Auction-item.png" alt="portfolio-page"></li>
+                                <li @click="push_e"><img src="img/Auction/Auction-add.png" alt="portfolio-page"></li>
+                                <li @click="push_f"><img src="img/Auction/Auction-transaction.png" alt="portfolio-page"></li>
+                                <li @click="push_g"><img src="img/Auction/Auction-transaction2.png" alt="portfolio-page"></li>
+                                <li @click="push_h"><img src="img/Auction/Auction-review.png" alt="portfolio-page"></li>
+                            </ul>
+                            <div id="image-area">
+                                <img v-if="type === 'A'"　src="img/Auction/Auction-login.png">
+                                <img v-else-if="type === 'B'" src="img/Auction/Auction-signup.png">
+                                <img v-else-if="type === 'C'" src="img/Auction/Auction-top.png">
+                                <img v-else-if="type === 'D'" src="img/Auction/Auction-item.png">
+                                <img v-else-if="type === 'E'" src="img/Auction/Auction-add.png">
+                                <img v-else-if="type === 'F'" src="img/Auction/Auction-transaction.png">
+                                <img v-else-if="type === 'G'" src="img/Auction/Auction-transaction2.png">
+                                <img v-else-if="type === 'H'" src="img/Auction/Auction-review.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail" slot="detail">
+                    </div>
+                </modal>
+                <modal v-else-if="showModal == '2'" @close="showModal = false" :key="2">
+                    <div class="close-button" slot="close-button">
+                        <img src="img/Hands - Denied.png">
+                    </div>
+                    <div class="description" slot="description">
+                        <div class="about-portfolio">
+                            <div class="about-main">
+                                <h4>ポートフォリオサイト</h4>
+                                <p>
+                                    現在ご覧いただいているWebページです。デザインから考え、自分のイメージを表現しました。モーダルウィンドウとカルーセルスライダーは学びたてのVue.jsを活用して実装しました。タブレットとスマートフォン用のレスポンシブデザインも対応しています。
+                                </p>
+                                <a href="#"><i class="fas fa-desktop"></i></i> Demo</a>
+                                <a href="#"><i class="fab fa-github"></i> GitHub</a>
+                            </div>
+                            <div class="about-sub">
+                                <h4>使用した技術</h4>
+                                <ul>
+                                    <li>HTML5/CSS3</li>
+                                    <li>Vue.js2.6</li>
+                                    <li>Formspree（お問合せフォーム）</li>
+                                    <li>AdobeXD(デザインカンプ）</li>
+                                    <li>AWS(EC2)</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="portfolio-images">
+                            <ul>
+                                <!-- 後で画像差し替え -->
+                                <li @click="push_a"><img src="img/portfolio2.png" alt="portfolio-page"></li>
+                                <li @click="push_b"><img src="img/portfolio-site/portfolio-site-modal.png" alt="portfolio-page"></li>
+                                <li @click="push_c"><img src="img/portfolio-site/portfolio-site-slider.png" alt="portfolio-page"></li>
+                                <li @click="push_d"><img src="img/portfolio-site/portfolio-site-contact.png" alt="portfolio-page"></li>
+                                <li @click="push_e"><img src="img/portfolio-site/portfolio-site-sm1.png" alt="portfolio-page"></li>
+                                <li @click="push_f"><img src="img/portfolio-site/portfolio-site-sm2.png" alt="portfolio-page"></li>
+                                <li @click="push_g"><img src="img/portfolio-site/portfolio-site-sm3.png" alt="portfolio-page"></li>
+                            </ul>
+                            <div id="image-area">
+                                <div id="image-area">
+                                    <img v-if="type === 'A'"　src="img/portfolio2.png">
+                                    <img v-else-if="type === 'B'" src="img/portfolio-site/portfolio-site-modal.png">
+                                    <img v-else-if="type === 'C'" src="img/portfolio-site/portfolio-site-slider.png">
+                                    <img v-else-if="type === 'D'" src="img/portfolio-site/portfolio-site-contact.png">
+                                    <img v-else-if="type === 'E'" src="img/portfolio-site/portfolio-site-sm1.png">
+                                    <img v-else-if="type === 'F'" src="img/portfolio-site/portfolio-site-sm2.png">
+                                    <img v-else-if="type === 'G'" src="img/portfolio-site/portfolio-site-sm3.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail" slot="detail">
+                    </div>
+                </modal>
+            </div>
+        </section>
+        <section id="skills" class="common">
+            <h2>Skills</h2>
+            <slider-main>
+                <div id="slider">
+                    <hooper :infinite-scroll="true" :items-to-show="2" :auto-play="true" :play-speed="4000">
+                        <slide>
+                            <div class="skill html-css">
+                                <div class="icon">
+                                    <img src="https://icongr.am/devicon/html5-original.svg?size=80&color=f05304">
+                                    <img src="https://icongr.am/devicon/css3-original.svg?size=80&color=f05304">
+                                </div>
+                                <div class="skill-text">
+                                    <h4>HTML5 / CSS3</h4>
+                                    <!-- 92文字 -->
+                                    <p>暇さえあれば、好きなWebサイトの模写をして遊んでおり、画面仕様通りのコーディングが可能です。CSSのアニメーションやレスポンシブデザインも実装可能で、このサイトトップのスクロールボタンもCSSのアニメーションで作成しました。</p>
+                                </div>
+                            </div>
+                        </slide>
+                        <slide>
+                            <div class="skill skills-common">
+                                <div class="icon">
+                                    <img src="https://icongr.am/devicon/php-original.svg?size=80&color=currentColor">
+                                </div>
+                                <div class="skill-text">
+                                    <h4>PHP</h4>
+                                    <p>フルスクラッチで開発したものはポートフォリオにはございませんが、「よくわかるPHPの教科書（たにぐちまこと著）」のTwitter風の掲示板のチュートリアルにリツイート機能といいね機能を実装し、フレームワークに頼らないSQL文も書くことができます。</p>
+                                </div>
+                            </div>
+                        </slide>
+                        <slide>
+                            <div class="skill skills-common">
+                                <div class="icon">
+                                    <img src="https://icongr.am/devicon/cakephp-original.svg?size=80&color=currentColor">
+                                </div>
+                                <div class="skill-text">
+                                    <h4>CakePHP</h4>
+                                    <p>私が一番最初に学んだフレームワークで、ここで初めてMVCモデルに触れました。"CakePHP超入門（掌田津耶乃著）"のオークションサイトのチュートリアル（会員登録、ログイン、商品登録機能など）に加え、発送・受取評価機能、取引相手評価機能を実装しました。</p>
+                                </div>
+                            </div>
+                        </slide>
+                        <slide>
+                            <div class="skill skills-common">
+                                <div class="icon">
+                                    <img src="https://icongr.am/devicon/laravel-plain.svg?size=80&color=f05340">
+                                </div>
+                                <div class="skill-text">
+                                    <h4>Laravel</h4>
+                                    <p>CakePHPで実装したミニオークションサイトをLaravelでも一から実装しました。ファサードを活用した実装やカスタムバリデーションの実装が可能です。現在、Vue.jsとLaravelでのSPA開発に挑戦中です。</p>
+                                </div>
+                            </div>
+                        </slide>
+                        <slide>
+                            <div class="skill skills-common">
+                                <div class="icon">
+                                    <img src="https://icongr.am/devicon/javascript-original.svg?size=80&color=currentColor">
+                                </div>
+                                <div class="skill-text">
+                                    <h4>JavaScript</h4>
+                                    <p>クライアントサイドの振る舞いとしてのJavaScriptを学んでいます（そのうち、Node.jsもやりたい！）。jQueryやBootstrapなどの外部ライブラリ、非同期通信や基本的なAPIを使った実装が可能です。このサイトではVue.jsを活用しました。</p>
+                                </div>
+                            </div>
+                        </slide>
+                        <slide>
+                            <div class="skill skills-common">
+                                <div class="icon">
+                                    <img src="https://icongr.am/devicon/vuejs-original.svg?size=80&color=f05304">
+                                </div>
+                                <div class="skill-text">
+                                    <h4>Vue.js</h4>
+                                    <p>まだ学びたてですが、このサイトのモーダルウィンドウとカルーセルスライダーはVue.jsを活用して実装しました。現在、スケジュール管理アプリをSPAにて開発中です（ポートフォリオ完成次第、こちらのサイトにアップ予定です）。</p>
+                                </div>
+                            </div>
+                        </slide>
+                        <slide>
+                            <div class="skill skills-common">
+                                <div class="icon">
+                                    <img src="https://icongr.am/devicon/mysql-original-wordmark.svg?size=80&color=f05304">
+                                </div>
+                                <div class="skill-text">
+                                    <h4>MySQL</h4>
+                                    <p>中小規模プロジェクトの機能要件に応じて、概念設計・論理設計・物理設計をすることが可能です。また、要件に応じたDDL・DML・DCLの作成ができます。</p>
+                                </div>
+                            </div>
+                        </slide>
+                        <slide>
+                            <div class="skill skills-common">
+                                <div class="icon">
+                                    <img src="https://icongr.am/devicon/docker-original.svg?size=80&color=f05304">
+                                </div>
+                                <div class="skill-text">
+                                    <h4>Docker</h4>
+                                    <p>Dockerfile、docker-compose.ymlを使って、開発環境を構築することができます。ミニオークションサイトでは、Dockerを使ったLEMP環境を構築して開発しました。</p>
+                                </div>
+                            </div>
+                        </slide>
+                        <slide>
+                            <div class="skill skills-common">
+                                <div class="icon">
+                                    <img src="https://icongr.am/devicon/amazonwebservices-original-wordmark.svg?size=80&color=f05304">
+                                </div>
+                                <div class="skill-text">
+                                    <h4>AWS</h4>
+                                    <p>EC2インスタンスを作成し、プロジェクトをGitからcloneしてデプロイすることが可能です。Route53にてドメインを取得し、ACM・ALBを使ってHTTPS化しました。また、S3・CodePipeline・CloudFrontを活用し、静的サイトを自動デプロイ可能です。</p>
+                                </div>
+                            </div>
+                        </slide>
+                        <hooper-navigation slot="hooper-addons"></hooper-navigation>
+                        <hooper-pagination slot="hooper-addons"></hooper-pagination>
+                    </hooper>
+                </div>
+            </slider-main>
+        </section>
+        <section id="contact" class="common">
+            <h2>Contact</h2>
+            <form action="https://formspree.io/f/mvovejjz" method="POST">
+                <input type="text" name="name" placeholder="Name">
+                <input type="email" name="_replyto" placeholder="Email">
+                <textarea name="message" placeholder="Message"></textarea>
+                <button type="submit">Send</button>
+            </form>
+            <img src="img/Allura - Vase Plant 2.png">
+        </section>
+        <footer>
+            <small>&copy; 2021 Shiho Ono</small>
+        </footer>
+        <script type="text/x-template" id="modal-template">
+            <transition name="modal">
+                <div class="modal-mask">
+                    <div class="modal-wrapper">
+                        <div class="modal-container">
+                            <div class="close" @click="$emit('close')">
+                                <slot name="close-button"></slot>
+                            </div>
+                            <slot name="description"></slot>
+                            <slot name="detail"></slot>
+                        </div>
+                    </div>
+                </div>
+            </transition>
+        </script>
+        <script type="text/x-template" id="slider-template">
+            <transition name="slider">
+                <slot name="slider-main"></slot>
+            </transition>
+        </script>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/hooper@0.2.1/dist/hooper.min.js"></script>
+    <script src="modal.js"></script>
+</body>
+</html>
