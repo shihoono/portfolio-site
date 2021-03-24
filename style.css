@@ -680,11 +680,11 @@ small {
     }
 
     #top a {
-        bottom: 100px;
+        bottom: 20px;
     }
 
     #about-this-site p {
-        max-width: 300px;
+        max-width: 280px;
     }
 
     .profile {
@@ -727,10 +727,22 @@ small {
         display: none;
     }
 
+    #skills {
+        padding-bottom: 210px;
+    }
+
     .skill {
         flex-direction: column;
         padding: 10px 25px 25px 10px;
         position: relative;
+    }
+
+    .hooper-list {
+        height: 150%;
+    }
+
+    .hooper-pagination {
+        bottom: -45%;
     }
 
     .hooper-slide {
@@ -766,16 +778,17 @@ small {
     }
 
     .html-css h4 {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         right: 10px;
     }
 
-    .html-css p {
-        padding-top: 10px;
+    .skill-text p {
         line-height: normal;
+        padding-top: 10px;
     }
 
-    .skill-text p {
+    .html-css p {
+        padding-top: 20px;
         line-height: normal;
     }
 
