@@ -212,7 +212,7 @@ header {
 
 #about-me img {
     max-width: 350px;
-    padding-right: 30px;
+    margin-right: 30px;
 }
 
 #about-me p {
