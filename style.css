@@ -197,6 +197,7 @@ header {
     line-height: 1.7;
     font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
     color: #0f3433;
+    font-weight: 600;
 }
 
 /* about me セクション */
@@ -273,6 +274,7 @@ header {
     margin-top: 10px;
     font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
     color: #0f3433;
+    font-weight: 600;
 }
 
 .modal-mask {
@@ -422,6 +424,10 @@ opacity: 0;
 
 .hooper-prev {
     left: 20px;
+}
+
+.hooper-pagination {
+    bottom: -15%;
 }
 
 .html-css img {
