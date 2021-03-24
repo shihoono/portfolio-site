@@ -426,6 +426,10 @@ opacity: 0;
     left: 20px;
 }
 
+.hooper-pagination {
+    bottom: -15%;
+}
+
 .html-css img {
     width: 40px;
 }
