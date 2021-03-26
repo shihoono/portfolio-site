@@ -219,11 +219,12 @@ header {
     color: #fffffe;
     font-size: 1.6rem;
     max-width: 350px;
-    padding-left: 30px;
+    padding: 0 20px;
+    margin: 0 auto;
     font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
 }
 
-.profile-detail p:nth-of-type(2) {
+#about-me p:nth-of-type(2) {
     margin-bottom: 20px;
 }
 
@@ -236,8 +237,9 @@ header {
     display: block;
     color: #fffffe;
     font-size: 1.6rem;
-    padding-left: 30px;
-    padding-bottom: 10px;
+    max-width: 350px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .profile-detail a:nth-of-type(2) {
