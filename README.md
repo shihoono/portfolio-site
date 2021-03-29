@@ -16,3 +16,6 @@ https://shiho-portfolio.com/
   - CodePipeline
   - Route53
   - ACM
+
+## AWS構成図
+![AWS portfolio-site](https://user-images.githubusercontent.com/64389296/112789491-2bd8f680-9098-11eb-88a5-2c7461c47e4b.png)
